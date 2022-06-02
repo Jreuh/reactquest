@@ -4,7 +4,11 @@
 }
 .Card {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+}
+.carte {
+  margin: 10px;
 }

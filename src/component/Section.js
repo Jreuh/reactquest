@@ -13,7 +13,7 @@ export default function LaCarte() {
     <div className="Card">
       {Champion.map((stagiaire) => (
         <div key={stagiaire.prenom}>
-          <Card sx={{ maxWidth: 345 }}>
+          <Card sx={{ maxWidth: 345 }} className="carte">
             <CardMedia>
               <img
                 className="CardImg"
