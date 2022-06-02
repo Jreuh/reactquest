@@ -7,6 +7,7 @@ import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
+import "../styles/header.css";
 
 export default function Navbar() {
   return (
@@ -26,11 +27,15 @@ export default function Navbar() {
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
               News
             </Typography>
-            <Button color="inherit">
-              <Link to="/">Acceuil</Link>
+            <Button variant="contained" color="success">
+              <Link className="headerButt" to="/">
+                Acceuil
+              </Link>
             </Button>
-            <Button color="inherit">
-              <Link to="/Anim">Animation</Link>
+            <Button variant="contained" color="success">
+              <Link className="headerButt" to="/Anim">
+                Animation
+              </Link>
             </Button>
           </Toolbar>
         </AppBar>
